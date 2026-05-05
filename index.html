@@ -17,9 +17,9 @@
       --accent:   #2a6b4a;
       --accent2:  #1a5c8a;
       --accentlt: #e8f2ec;
-      --text:     #1e1c18;
-      --muted:    #7a7060;
-      --soft:     #4a4438;
+      --text:     #1a1814;
+      --muted:    #504840;
+      --soft:     #2e2a24;
       --mono: 'Space Mono', monospace;
       --sans: 'DM Sans', sans-serif;
     }
@@ -30,8 +30,8 @@
       background: var(--bg);
       color: var(--text);
       font-family: var(--sans);
-      font-weight: 300;
-      line-height: 1.65;
+      font-weight: 400;
+      line-height: 1.7;
       overflow-x: hidden;
     }
 
@@ -152,7 +152,7 @@
     }
 
     .header-bio {
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: var(--soft);
       max-width: 500px;
       line-height: 1.75;
@@ -257,7 +257,7 @@
 
     .exp-date {
       font-family: var(--mono);
-      font-size: 0.68rem;
+      font-size: 0.72rem;
       color: var(--muted);
       margin-bottom: 0.55rem;
       line-height: 1.5;
@@ -275,7 +275,7 @@
 
     .exp-role {
       font-family: var(--mono);
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 700;
       color: var(--text);
       margin-bottom: 1rem;
@@ -284,7 +284,7 @@
     .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
 
     .exp-bullets li {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: var(--soft);
       padding-left: 1.1rem;
       position: relative;
@@ -318,7 +318,7 @@
     .edu-date { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); }
 
     .edu-school { font-family: var(--mono); font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
-    .edu-degree { font-size: 0.83rem; color: var(--soft); }
+    .edu-degree { font-size: 0.88rem; color: var(--soft); }
 
     /* FOOTER */
     footer {
@@ -359,6 +359,8 @@
     <ul class="nav-links">
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#competitions">Competitions</a></li>
+      <li><a href="#opensource">Open Source</a></li>
       <li><a href="#education">Education</a></li>
     </ul>
   </div>
@@ -375,7 +377,7 @@
       </p>
     </div>
     <div class="header-links">
-      <a href="https://docs.google.com/document/d/1HKnEXoXScLfjmfl_06VDN6fW8llI-08O8rKFEF-4_pM/edit?usp=drive_link" target="_blank" class="hlink hlink-primary">↓ Resume</a>
+      <a href="https://docs.google.com/document/d/1CJFIHhQxzEqqdjsjWr2-vGoJl3vlVDFGT6ooUso5xnY/edit?usp=sharing" target="_blank" class="hlink hlink-primary">↓ Resume</a>
       <a href="https://github.com/DanielTobi0" target="_blank" class="hlink hlink-outline">⌥ GitHub</a>
       <a href="https://www.linkedin.com/in/danieltobi0/" target="_blank" class="hlink hlink-outline">in LinkedIn</a>
       <a href="https://x.com/DanielTobi0" target="_blank" class="hlink hlink-outline">𝕏 Twitter</a>
@@ -392,33 +394,47 @@
 
       <div class="exp-item">
         <div class="exp-meta">
-          <div class="exp-date">Jul 2025 – Present</div>
-          <div class="exp-company">UEFO PRO</div>
+          <div class="exp-date">Jul 2025 – Apr 2026</div>
+          <div class="exp-company">UEFO</div>
           <div class="exp-location">Remote · UAE</div>
         </div>
         <div>
           <div class="exp-role">AI Engineer</div>
           <ul class="exp-bullets">
-            <li>Co-architected a <span class="hi">multi-agent trading system</span> for a hedge fund founded by a former BlackRock director.</li>
-            <li>Built a modular <span class="hi">portfolio optimisation engine</span> covering instrument analysis, position sizing, and performance attribution to generate trading recommendations.</li>
-            <li>Automated instrument research, delivering a <span class="hi">40% reduction in manual research time</span> for market understanding.</li>
-            <li>Implemented <span class="hi">SSE streaming</span> for the real-time chat agent, enabling low-latency interactive querying over the portfolio.</li>
+            <li>Founding engineer: co-built a <span class="hi">multi-agent trading system</span> for a Buy-side hedge fund founded by a former BlackRock director, currently deployed and in full use.</li>
+            <li>Built a modular <span class="hi">portfolio optimisation engine</span> covering instrument analysis, position sizing, and performance attribution, <span class="hi">reducing manual workload by 60%</span>.</li>
+            <li>Integrated high-signal macro-economic news from multiple credible sources to provide current market understanding.</li>
+            <li>Built a <span class="hi">chat system with in-built tool capacity</span> for the buy-side analyst to use daily.</li>
           </ul>
         </div>
       </div>
 
       <div class="exp-item">
         <div class="exp-meta">
-          <div class="exp-date">Dec 2024 – Jun 2025</div>
+          <div class="exp-date">Dec 2024 – Oct 2025</div>
           <div class="exp-company">Peepalytics AI</div>
           <div class="exp-location">Remote · US</div>
         </div>
         <div>
-          <div class="exp-role">Machine Learning Engineer</div>
+          <div class="exp-role">AI Engineer</div>
           <ul class="exp-bullets">
-            <li>Led development of an <span class="hi">autonomous ETL pipeline (LangGraph)</span> that transforms raw structured and semi-structured data into insights via task-specific code generation.</li>
+            <li>Engineered agents for <span class="hi">dynamic code generation</span>, capable of ingesting structured, semi-structured, and unstructured data to autonomously perform data loading, cleaning, visualisation, and in-depth analysis.</li>
             <li>Built <span class="hi">Text-to-Cypher</span> queries enabling natural language querying over knowledge graph databases.</li>
-            <li>Implemented behaviour assessment using <span class="hi">Hume AI</span> to understand user emotions, enabling empathetic, context-aware user experiences.</li>
+            <li>Implemented behaviour assessment using <span class="hi">Hume AI</span> to understand clients' emotions, enabling empathetic, context-aware user experiences.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">May 2025 – Jul 2025</div>
+          <div class="exp-company">Periculum</div>
+          <div class="exp-location">Internship</div>
+        </div>
+        <div>
+          <div class="exp-role">Data Scientist</div>
+          <ul class="exp-bullets">
+            <li>Worked on <span class="hi">bank statement parsing</span> using rule-based methods across multiple financial services to reduce manual workload.</li>
           </ul>
         </div>
       </div>
@@ -436,11 +452,13 @@
         <div class="exp-meta">
           <div class="exp-date">Personal Project</div>
           <div class="exp-company">Chat with Structured Data</div>
+          <div class="exp-location"><a href="https://youtu.be/mA0HTdnyRDE?si=DdXzeKaF6pu3KIej" target="_blank" style="color:var(--accent);text-decoration:none;">↗ Live Demo</a></div>
         </div>
         <div>
           <ul class="exp-bullets">
-            <li>Built an agentic workflow for natural language Q&amp;A over structured data.</li>
-            <li>Added retrieval and reasoning to improve relevance and exploration usability.</li>
+            <li>Built an agent to perform <span class="hi">Q&amp;A on multiple tabular datasets</span> without external agentic frameworks.</li>
+            <li>Utilised effective <span class="hi">context engineering</span> to manage agent memory and improve response rate.</li>
+            <li>Helps stakeholders get immediate answers, reducing wait time with analysis teams.</li>
           </ul>
         </div>
       </div>
@@ -449,15 +467,93 @@
         <div class="exp-meta">
           <div class="exp-date">Research Reproduction</div>
           <div class="exp-company">Multi-Agent Financial Analysis Framework</div>
-          <div class="exp-location">arXiv:2508.11152</div>
+          <div class="exp-location"><a href="https://github.com/DanielTobi0/BlackRock" target="_blank" style="color:var(--accent);text-decoration:none;">⌥ GitHub</a> · arXiv:2508.11152</div>
         </div>
         <div>
           <ul class="exp-bullets">
-            <li>Reproduced arXiv:2508.11152 end-to-end.</li>
-            <li>Integrated RAG tooling, embeddings, and structured outputs to produce risk-aware investment reports (risk-averse &amp; risk-neutral).</li>
+            <li>Reproduced arXiv:2508.11152 end-to-end in Python with a <span class="hi">modular multi-agent workflow</span> for fundamental, sentiment, and valuation analysis.</li>
+            <li>Framework used: <span class="hi">AutoGen</span>, matching the paper's original implementation.</li>
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="competitions">
+    <div class="section-header">
+      <div class="section-label">ML Competitions</div>
+      <div class="section-line"></div>
+    </div>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">#2 of 123</div>
+          <div class="exp-company">Swahili News Classification</div>
+          <div class="exp-location"><a href="https://zindi.africa/competitions/chatgpt-ml-challenge-swahili-news-classification" target="_blank" style="color:var(--accent);text-decoration:none;">↗ Zindi</a></div>
+        </div>
+        <div>
+          <ul class="exp-bullets">
+            <li>Ranked <span class="hi">2nd out of 123 participants</span> in the Zindi Swahili News Classification competition.</li>
+            <li>Applied a pre-trained <span class="hi">Swahili BERT model</span> (HuggingFace Transformers) for multi-class news classification across 6 categories.</li>
+            <li>Used PyTorch with GPU-accelerated inference and softmax probability outputs for final predictions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">#3 of 102</div>
+          <div class="exp-company">Adbot Ad Engagement Forecasting</div>
+          <div class="exp-location"><a href="https://zindi.africa/competitions/adbot-ad-engagement-forecasting-challenge" target="_blank" style="color:var(--accent);text-decoration:none;">↗ Zindi</a></div>
+        </div>
+        <div>
+          <ul class="exp-bullets">
+            <li>Ranked <span class="hi">3rd out of 102 participants</span> in the Zindi AdBot Ad Engagement Forecasting Challenge.</li>
+            <li>Engineered lag features for clicks and impressions over 7–28 day windows; applied one-hot encoding and aggregated daily metrics.</li>
+            <li>Built a <span class="hi">Linear Regression model</span> with sensitivity analysis, achieving a public and private RMSE of <span class="hi">17.22</span>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">#3 of 38</div>
+          <div class="exp-company">Exchange Rate Forecasting Challenge</div>
+          <div class="exp-location"><a href="https://zindi.africa/competitions/exchange-rate-forecasting-challenge" target="_blank" style="color:var(--accent);text-decoration:none;">↗ Zindi</a></div>
+        </div>
+        <div>
+          <ul class="exp-bullets">
+            <li>Ranked <span class="hi">3rd out of 38 participants</span> in the Zindi IndabaX Nigeria 2024 Exchange Rate Forecasting Challenge.</li>
+            <li>Conducted time series stationarity testing (ADF test), analysed ACF/PACF plots, and supplemented training data with manually sourced exchange rates.</li>
+            <li>Fitted an <span class="hi">ARIMA(5,1,0)</span> model for a 14-day NGN/USD forecast horizon.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="opensource">
+    <div class="section-header">
+      <div class="section-label">Open Source</div>
+      <div class="section-line"></div>
+    </div>
+    <div class="exp-list">
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-company">TradingAgents</div>
+          <div class="exp-location"><a href="https://github.com/TauricResearch/TradingAgents/pull/495" target="_blank" style="color:var(--accent);text-decoration:none;">↗ PR #495</a></div>
+        </div>
+        <div>
+          <ul class="exp-bullets">
+            <li>Diagnosed a <span class="hi">Gemini multi-turn function calling failure</span> and identified missing <code style="font-size:0.82rem;background:var(--bg2);padding:0.1em 0.35em;border-radius:2px;">thought_signature</code> handling in <code style="font-size:0.82rem;background:var(--bg2);padding:0.1em 0.35em;border-radius:2px;">langchain-google-genai</code>.</li>
+            <li>Implemented a workaround and <span class="hi">influenced the maintainers</span> to adopt an upgrade to <code style="font-size:0.82rem;background:var(--bg2);padding:0.1em 0.35em;border-radius:2px;">langchain-google-genai&gt;=4.0.0</code>.</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -468,7 +564,7 @@
     </div>
     <div class="edu-list">
       <div class="edu-item">
-        <div class="edu-date">Jun 2025 – Apr 2027</div>
+        <div class="edu-date">May 2025 – Jan 2027</div>
         <div>
           <div class="edu-school">Miva Open University</div>
           <div class="edu-degree">B.Sc. Computer Science · Remote</div>
@@ -478,7 +574,7 @@
         <div class="edu-date">Jan 2019 – Mar 2024</div>
         <div>
           <div class="edu-school">Ibadan City Polytechnic</div>
-          <div class="edu-degree">Computer Science</div>
+          <div class="edu-degree">HND Computer Science</div>
         </div>
       </div>
     </div>
@@ -493,7 +589,7 @@
     <a href="https://www.linkedin.com/in/danieltobi0/" target="_blank">LinkedIn</a>
     <a href="https://x.com/DanielTobi0" target="_blank">X (Twitter)</a>
     <a href="mailto:adejumobidaniel563@gmail.com">adejumobidaniel563@gmail.com</a>
-    <a href="https://docs.google.com/document/d/1HKnEXoXScLfjmfl_06VDN6fW8llI-08O8rKFEF-4_pM/edit?usp=drive_link" target="_blank">Resume</a>
+    <a href="https://docs.google.com/document/d/1CJFIHhQxzEqqdjsjWr2-vGoJl3vlVDFGT6ooUso5xnY/edit?usp=sharing" target="_blank">Resume</a>
   </div>
 </footer>
 
